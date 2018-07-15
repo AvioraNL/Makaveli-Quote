@@ -34,7 +34,7 @@ public final class Connection {
         }
     }
 
-      public void saveQuote() throws UnirestException, JSONException {
+      public  void saveQuote() throws UnirestException, JSONException {
         quotes = new TreeSet<>();
         JSONArray body = connection().getBody().getArray();
         for (int i = 0; i < body.length(); i++) {
